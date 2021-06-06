@@ -1,6 +1,10 @@
 import '../assets/css/header.css';
 import logo from '../assets/img/logo.png';
 
+import {
+    Link
+} from "react-router-dom";
+
 function Header() {
     return(
         <nav class="navbar navbar-dark bg-primary">
@@ -14,13 +18,13 @@ function Header() {
                     <div className="col-md-9">
                         <ul>
                             <li>
-                                <a>Home</a>
+                                <Link to="/home">Home</Link>
                             </li>
                             <li>
-                                <a>About</a>
+                                <Link to="/about">About</Link>
                             </li>
                             <li>
-                                <a>Contact</a>
+                                <Link to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>
